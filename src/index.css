@@ -9,6 +9,7 @@
 :root {
 	--background-color: #000;
 	--text-color: #fff;
+	--main-color: #4650fa;
 }
 
 body {
@@ -25,4 +26,27 @@ h5,
 h6 {
 	color: var(--text-color);
 	text-decoration: none;
+}
+
+.btn {
+	padding: 8px 32px;
+	font-size: 1rem;
+	background: rgba(255, 255, 255, 0.2);
+	color: var(--text-color);
+	border: none;
+	border-radius: 10px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+	background: var(--main-color);
+	color: #222;
+}
+
+.btn:disabled {
+	background: rgba(255, 255, 255, 0.2);
+	color: #fff;
+	cursor: not-allowed;
 }

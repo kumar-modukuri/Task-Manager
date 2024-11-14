@@ -5,5 +5,5 @@
 }
 
 .header-container h1 {
-	color: blue;
+	color: var(--main-color);
 }

@@ -1,12 +1,12 @@
 .middle-container {
-	background: blue;
 	flex: 1;
 	display: flex;
 	flex-direction: column;
 }
 
+/* SEARCH-DIV */
+
 .search-div {
-	background: red;
 	flex: 1;
 	display: flex;
 	align-items: center;
@@ -14,10 +14,51 @@
 	gap: 20px;
 }
 
+.search-div input {
+	padding: 8px 14px;
+	font-size: 17px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	color: #fff;
+	border-radius: 10px;
+	outline: none;
+}
+
+/* CONTENT-DIV */
+
 .content-div {
-	background: green;
 	flex: 7;
+	display: flex;
+}
+
+.form-div {
+	flex: 1;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.tasks-div {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.filters-div {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+input[type="checkbox"] {
+	cursor: pointer;
+	margin-right: 4px;
+	height: 14px;
+	width: 14px;
+}
+
+.tasks-container {
+	background: green;
+	flex: 1;
 }
