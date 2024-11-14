@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./FormStyles.css";
 
-const Form = () => {
+const Form = ({ onAddTask }) => {
 	const [title, setTitle] = useState("");
 	const [description, setDescription] = useState("");
 	const [loading, setLoading] = useState(false);
@@ -13,17 +13,18 @@ const Form = () => {
 
 		try {
 			const id = Date.now();
-			const newTask = { id, title, description, priority };
 
-			const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+			const newTask = {
+				id,
+				title,
+				description,
+				priority,
+				status: "incomplete",
+			};
 
-			tasks.push(newTask);
-
-			localStorage.setItem("tasks", JSON.stringify(tasks));
-
-			console.log("Task Added : ", newTask);
+			onAddTask(newTask);
 		} catch (error) {
-			console.log("Error While Adding Task :", error);
+			console.log("Error While Adding Task : ", error);
 		} finally {
 			setLoading(false);
 			setTitle("");
