@@ -125,8 +125,9 @@ Smooth animations are used to enhance the user interface and make the experience
 
 ## **Screenshots** 📸
 
-![Task Manager Screenshot](url-to-screenshot1)
-![Task Manager Screenshot](url-to-screenshot2)
+![Task Manager Screenshot 1](./screenshots/screenshot1.png)
+![Task Manager Screenshot 2](./screenshots/screenshot2.png)
+![Task Manager Screenshot 3](./screenshots/screenshot3.png)
 
 ---
 
